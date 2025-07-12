@@ -1,0 +1,84 @@
+{
+  "requests": [
+    {
+      "id": "req_001",
+      "requesterId": "user_001",
+      "recipientId": "user_002",
+      "requesterSkill": "Web Development",
+      "recipientSkill": "Photography",
+      "message": "I'd love to learn photography! I can teach you web development in exchange.",
+      "status": "accepted",
+      "createdAt": "2025-07-10T10:47:34.416Z"
+    },
+    {
+      "id": "req_002",
+      "requesterId": "user_003",
+      "recipientId": "user_001",
+      "requesterSkill": "Graphic Design",
+      "recipientSkill": "React",
+      "message": "Looking to improve my design skills while helping you with React development!",
+      "status": "accepted",
+      "createdAt": "2025-07-07T10:47:34.422Z"
+    },
+    {
+      "id": "req_003",
+      "requesterId": "user_004",
+      "recipientId": "user_005",
+      "requesterSkill": "Piano",
+      "recipientSkill": "Yoga",
+      "message": "Music and wellness - perfect combination! Let's swap skills.",
+      "status": "completed",
+      "createdAt": "2025-07-02T10:47:34.422Z"
+    },
+    {
+      "id": "req_004",
+      "requesterId": "user_006",
+      "recipientId": "user_007",
+      "requesterSkill": "Cooking",
+      "recipientSkill": "Spanish Language",
+      "message": "I can teach you cooking while learning Spanish!",
+      "status": "pending",
+      "createdAt": "2025-07-11T10:47:34.422Z"
+    },
+    {
+      "id": "req_005",
+      "requesterId": "user_008",
+      "recipientId": "user_009",
+      "requesterSkill": "Data Analysis",
+      "recipientSkill": "Creative Writing",
+      "message": "Data meets creativity! Let's exchange skills.",
+      "status": "accepted",
+      "createdAt": "2025-07-09T10:47:34.422Z"
+    },
+    {
+      "id": "req_1752317498147_og4y82d55",
+      "requesterId": "user_003",
+      "recipientId": "user_004",
+      "requesterSkill": "Graphic Design",
+      "recipientSkill": "Piano",
+      "message": "I can teach you graphic design while learning piano!",
+      "status": "accepted",
+      "createdAt": "2025-07-12T10:51:38.147Z"
+    },
+    {
+      "id": "req_1752318189235_mtz31u82o",
+      "requesterId": "user_001",
+      "recipientId": "user_002",
+      "requesterSkill": "Web Development",
+      "recipientSkill": "Photography",
+      "message": "Hi! I would love to swap skills with you. I can teach you web development and would love to learn graphic design from you.",
+      "status": "accepted",
+      "createdAt": "2025-07-12T11:03:09.235Z"
+    },
+    {
+      "id": "req_1752318218000_raxao6ei8",
+      "requesterId": "user_001",
+      "recipientId": "user_002",
+      "requesterSkill": "Web Development",
+      "recipientSkill": "Photography",
+      "message": "Hi! I would love to swap skills with you. I can teach you web development and would love to learn graphic design from you.",
+      "status": "accepted",
+      "createdAt": "2025-07-12T11:03:38.000Z"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "name": "Sarah Johnson",
+      "email": "sarah@example.com",
+      "password": "$2b$10$mG9UUuw8djY7.ylh7hle0e0RiMX78fB1z8gB0RViqj1a9ojisoOuu",
+      "location": "San Francisco, CA",
+      "bio": "Full-stack developer with 5 years experience. Love teaching coding and building web applications!",
+      "availability": "Weekends",
+      "skillsOffered": [
+        "Web Development",
+        "React",
+        "JavaScript",
+        "Node.js"
+      ],
+      "skillsWanted": [
+        "Graphic Design",
+        "Photography",
+        "Video Editing"
+      ],
+      "rating": 4.9,
+      "swapsCompleted": 5,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.504Z"
+    },
+    {
+      "id": "user_002",
+      "name": "Mike Chen",
+      "email": "mike@example.com",
+      "password": "$2b$10$.zXU3upk6BW6ou0Xb4VQe.1l/OPYd9qKiOVP.oQbffo32/GkieW.m",
+      "location": "New York, NY",
+      "bio": "Professional photographer specializing in portraits, events, and street photography.",
+      "availability": "Evenings",
+      "skillsOffered": [
+        "Photography",
+        "Photo Editing",
+        "Lightroom",
+        "Photoshop"
+      ],
+      "skillsWanted": [
+        "Web Development",
+        "Marketing",
+        "Social Media"
+      ],
+      "rating": 4.8,
+      "swapsCompleted": 3,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.574Z"
+    },
+    {
+      "id": "user_003",
+      "name": "Emily Rodriguez",
+      "email": "emily@example.com",
+      "password": "$2b$10$I6ATFTawOASGReZmsa5Tm.ls.AgbrWIZ8ZyTYvSZ.H4cQ35gZ9Ddq",
+      "location": "Austin, TX",
+      "bio": "Creative designer with passion for user experience and visual storytelling. Love creating beautiful interfaces!",
+      "availability": "Flexible",
+      "skillsOffered": [
+        "Graphic Design",
+        "UI/UX",
+        "Figma",
+        "Illustration"
+      ],
+      "skillsWanted": [
+        "Spanish Language",
+        "Cooking",
+        "Yoga"
+      ],
+      "rating": 5,
+      "swapsCompleted": 7,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.645Z"
+    },
+    {
+      "id": "user_004",
+      "name": "David Kim",
+      "email": "david@example.com",
+      "password": "$2b$10$Shf0MvIHLvDYe1fqMLsSK.Eb3nvquJp3C0YIXxr0HMsbDZVmRKjXC",
+      "location": "Seattle, WA",
+      "bio": "Music teacher and performer with 10+ years of teaching experience. Passionate about sharing music!",
+      "availability": "Weekdays",
+      "skillsOffered": [
+        "Piano",
+        "Music Theory",
+        "Guitar",
+        "Composition"
+      ],
+      "skillsWanted": [
+        "Programming",
+        "Data Analysis",
+        "Machine Learning"
+      ],
+      "rating": 4.7,
+      "swapsCompleted": 4,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.714Z"
+    },
+    {
+      "id": "user_005",
+      "name": "Lisa Thompson",
+      "email": "lisa@example.com",
+      "password": "$2b$10$cg.rJMy6zwdKbFt4EdihWOa.4kA/kioxZpZPPCL00YMNlFvECxg6S",
+      "location": "Denver, CO",
+      "bio": "Certified yoga instructor helping people find balance and wellness through mindful movement.",
+      "availability": "Mornings",
+      "skillsOffered": [
+        "Yoga",
+        "Meditation",
+        "Wellness Coaching",
+        "Pilates"
+      ],
+      "skillsWanted": [
+        "Business Strategy",
+        "Marketing",
+        "Public Speaking"
+      ],
+      "rating": 4.9,
+      "swapsCompleted": 6,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.785Z"
+    },
+    {
+      "id": "user_006",
+      "name": "Alex Parker",
+      "email": "alex@example.com",
+      "password": "$2b$10$78DlAcna/SjBg118TV6pQu1N4nWhY/8TrrdvqUkcm1MKEmiXc2m0O",
+      "location": "Portland, OR",
+      "bio": "Chef and nutritionist passionate about healthy, delicious food and sustainable cooking.",
+      "availability": "Weekends",
+      "skillsOffered": [
+        "Cooking",
+        "Baking",
+        "Nutrition",
+        "Meal Planning"
+      ],
+      "skillsWanted": [
+        "Photography",
+        "Video Editing",
+        "Social Media"
+      ],
+      "rating": 4.6,
+      "swapsCompleted": 2,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.855Z"
+    },
+    {
+      "id": "user_007",
+      "name": "Maria Garcia",
+      "email": "maria@example.com",
+      "password": "$2b$10$9neFC1lmzVlv1lroRPC.he5f0wn97RGqQfBN.KZya47eOEp0AO.mi",
+      "location": "Miami, FL",
+      "bio": "Spanish language teacher and cultural exchange enthusiast. Love connecting people through language!",
+      "availability": "Evenings",
+      "skillsOffered": [
+        "Spanish Language",
+        "Translation",
+        "Cultural Exchange",
+        "ESL Teaching"
+      ],
+      "skillsWanted": [
+        "Web Development",
+        "Digital Marketing",
+        "Content Writing"
+      ],
+      "rating": 4.8,
+      "swapsCompleted": 8,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.925Z"
+    },
+    {
+      "id": "user_008",
+      "name": "James Wilson",
+      "email": "james@example.com",
+      "password": "$2b$10$l01SeAsyICbit8rIgIeroeBFJBtgwbGCzdFU/MXErga9fQVWHTHzi",
+      "location": "Chicago, IL",
+      "bio": "Data scientist and machine learning engineer. Excited to share knowledge about AI and analytics!",
+      "availability": "Weekends",
+      "skillsOffered": [
+        "Data Analysis",
+        "Machine Learning",
+        "Python",
+        "Statistics"
+      ],
+      "skillsWanted": [
+        "Guitar",
+        "Music Production",
+        "Creative Writing"
+      ],
+      "rating": 4.9,
+      "swapsCompleted": 4,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:34.996Z"
+    },
+    {
+      "id": "user_009",
+      "name": "Sophie Anderson",
+      "email": "sophie@example.com",
+      "password": "$2b$10$msbj5ARowXIlIjt1wdvq5.VlasJlbXFxEXY.dNCvutwnjGjK3sxY6",
+      "location": "Boston, MA",
+      "bio": "Professional writer and content creator. Passionate about storytelling and communication.",
+      "availability": "Flexible",
+      "skillsOffered": [
+        "Creative Writing",
+        "Content Creation",
+        "Editing",
+        "Copywriting"
+      ],
+      "skillsWanted": [
+        "Web Development",
+        "Graphic Design",
+        "Photography"
+      ],
+      "rating": 4.7,
+      "swapsCompleted": 5,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:35.066Z"
+    },
+    {
+      "id": "user_010",
+      "name": "Ryan Martinez",
+      "email": "ryan@example.com",
+      "password": "$2b$10$uAa7r/kl2wIrxtVpKqiirO8U7Xw4T80DtgsROclfz0ipB8lduZ8Fq",
+      "location": "Los Angeles, CA",
+      "bio": "Video editor and filmmaker. Love creating compelling visual stories and helping others learn!",
+      "availability": "Weekdays",
+      "skillsOffered": [
+        "Video Editing",
+        "Filmmaking",
+        "Adobe Premiere",
+        "Motion Graphics"
+      ],
+      "skillsWanted": [
+        "Web Development",
+        "Marketing",
+        "Business Strategy"
+      ],
+      "rating": 4.8,
+      "swapsCompleted": 6,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:35.136Z"
+    },
+    {
+      "id": "user_011",
+      "name": "Nina Patel",
+      "email": "nina@example.com",
+      "password": "$2b$10$DjJ4KFqO4cZu.fVRma3puONHg4U2jxx6c9ovug3O0tIjLCU3FBar2",
+      "location": "Phoenix, AZ",
+      "bio": "Marketing specialist and social media expert. Helping businesses grow their online presence!",
+      "availability": "Evenings",
+      "skillsOffered": [
+        "Digital Marketing",
+        "Social Media",
+        "Brand Strategy",
+        "Analytics"
+      ],
+      "skillsWanted": [
+        "Web Development",
+        "Graphic Design",
+        "Video Editing"
+      ],
+      "rating": 4.9,
+      "swapsCompleted": 7,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:35.206Z"
+    },
+    {
+      "id": "user_012",
+      "name": "Tom O'Connor",
+      "email": "tom@example.com",
+      "password": "$2b$10$sgEcoihSH/E.mwnpBtEg1uTb2vvEzBrt9/jI3hCt5wkaJGkvw18xq",
+      "location": "Dallas, TX",
+      "bio": "Business consultant and public speaker. Passionate about helping entrepreneurs succeed!",
+      "availability": "Weekends",
+      "skillsOffered": [
+        "Business Strategy",
+        "Public Speaking",
+        "Consulting",
+        "Leadership"
+      ],
+      "skillsWanted": [
+        "Web Development",
+        "Data Analysis",
+        "Content Creation"
+      ],
+      "rating": 4.8,
+      "swapsCompleted": 9,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:47:35.276Z"
+    },
+    {
+      "id": "user_1752317737785_tdgpiaxty",
+      "name": "123456",
+      "email": "ranahetraj@gmail.com",
+      "password": "$2b$10$VhsqP0oU1W/XWabPIuGQ6eB/3BY8Qd39/6C6xVMzz2UNDeTZT1v3K",
+      "location": "",
+      "bio": "",
+      "availability": "Flexible",
+      "skillsOffered": [],
+      "skillsWanted": [],
+      "rating": 0,
+      "swapsCompleted": 0,
+      "avatar": "/placeholder-avatar.jpg",
+      "createdAt": "2025-07-12T10:55:37.785Z"
+    }
+  ]
+}
