@@ -11,45 +11,105 @@ import RequestSwapDialog from "@/components/RequestSwapDialog";
 import { toast } from "@/hooks/use-toast";
 
 export default function BrowseSkillsPage() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("all");
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedUser, setSelectedUser] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [showRequestDialog, setShowRequestDialog] = useState(false);
+  const [selectedUser, setSelectedUser] = useState(null);
+  
+  // Mock current user
+  const currentUser = {
+    id: "current-user-123",
+    name: "John Doe",
+    email: "john@example.com"
+  };
 
-  // Get current user from localStorage
-  const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
+  // Mock users data
+  const mockUsers = [
+    {
+      id: "user-1",
+      name: "Sarah Johnson",
+      email: "sarah@example.com",
+      location: "San Francisco, CA",
+      rating: 4.8,
+      bio: "Passionate web developer with 5+ years of experience in React and Node.js. Love teaching and learning new technologies.",
+      skillsOffered: ["Web Development", "React", "JavaScript", "Node.js"],
+      skillsWanted: ["Graphic Design", "UI/UX", "Figma"],
+      availability: "Weekends",
+      avatar: ""
+    },
+    {
+      id: "user-2", 
+      name: "Mike Chen",
+      email: "mike@example.com",
+      location: "New York, NY",
+      rating: 4.9,
+      bio: "Professional graphic designer specializing in brand identity and UI/UX design. Always excited to collaborate on creative projects.",
+      skillsOffered: ["Graphic Design", "UI/UX", "Figma", "Brand Identity"],
+      skillsWanted: ["Web Development", "JavaScript", "React"],
+      availability: "Evenings",
+      avatar: ""
+    },
+    {
+      id: "user-3",
+      name: "Emma Wilson",
+      email: "emma@example.com", 
+      location: "Austin, TX",
+      rating: 4.7,
+      bio: "Certified yoga instructor and wellness coach. Helping people find balance through movement and mindfulness practices.",
+      skillsOffered: ["Yoga", "Meditation", "Wellness Coaching", "Nutrition"],
+      skillsWanted: ["Photography", "Photo Editing", "Social Media Marketing"],
+      availability: "Mornings",
+      avatar: ""
+    },
+    {
+      id: "user-4",
+      name: "David Rodriguez",
+      email: "david@example.com",
+      location: "Miami, FL", 
+      rating: 4.6,
+      bio: "Professional photographer with expertise in portrait and event photography. Love capturing life's beautiful moments.",
+      skillsOffered: ["Photography", "Photo Editing", "Lightroom", "Event Photography"],
+      skillsWanted: ["Cooking", "Baking", "Spanish Language"],
+      availability: "Flexible",
+      avatar: ""
+    },
+    {
+      id: "user-5",
+      name: "Lisa Thompson",
+      email: "lisa@example.com",
+      location: "Seattle, WA",
+      rating: 4.8,
+      bio: "Experienced chef and cooking instructor. Passionate about teaching others to create delicious, healthy meals.",
+      skillsOffered: ["Cooking", "Baking", "Nutrition", "Meal Planning"],
+      skillsWanted: ["Music Theory", "Piano", "Guitar"],
+      availability: "Weekends",
+      avatar: ""
+    },
+    {
+      id: "user-6",
+      name: "Alex Kim",
+      email: "alex@example.com",
+      location: "Los Angeles, CA",
+      rating: 4.9,
+      bio: "Music producer and multi-instrumentalist. Teaching piano, guitar, and music production to all skill levels.",
+      skillsOffered: ["Piano", "Guitar", "Music Theory", "Music Production"],
+      skillsWanted: ["Data Analysis", "Python", "Machine Learning"],
+      availability: "Evenings",
+      avatar: ""
+    }
+  ];
 
-  // Fetch users from backend
   useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const response = await fetch('http://localhost:3001/api/users');
-        if (response.ok) {
-          const data = await response.json();
-          // Filter out current user
-          const filteredUsers = data.filter(user => user.id !== currentUser.id);
-          setUsers(filteredUsers);
-        } else {
-          toast({
-            title: "Error",
-            description: "Failed to load users",
-            variant: "destructive",
-          });
-        }
-      } catch (error) {
-        toast({
-          title: "Error",
-          description: "Network error loading users",
-          variant: "destructive",
-        });
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchUsers();
-  }, [currentUser.id]);
+    // Simulate loading
+    const timer = setTimeout(() => {
+      setUsers(mockUsers);
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleRequestSwap = (user) => {
     if (!currentUser.id) {
@@ -93,6 +153,7 @@ export default function BrowseSkillsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Browse Skills</h1>
@@ -100,6 +161,7 @@ export default function BrowseSkillsPage() {
             Discover amazing skills offered by our community members
           </p>
         </div>
+
         {/* Search and Filters */}
         <div className="mb-8 space-y-4">
           <div className="flex flex-col md:flex-row gap-4">
@@ -127,6 +189,7 @@ export default function BrowseSkillsPage() {
             </Select>
           </div>
         </div>
+
         {/* Results */}
         {loading ? (
           <div className="text-center py-12">
@@ -205,6 +268,7 @@ export default function BrowseSkillsPage() {
             ))}
           </div>
         )}
+
         {!loading && filteredUsers.length === 0 && (
           <div className="text-center py-12">
             <div className="max-w-md mx-auto">
@@ -217,6 +281,7 @@ export default function BrowseSkillsPage() {
           </div>
         )}
       </div>
+
       {/* Request Swap Dialog */}
       {selectedUser && (
         <RequestSwapDialog

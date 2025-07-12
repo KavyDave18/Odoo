@@ -18,6 +18,7 @@ interface RequestSwapDialogProps {
   };
   currentUser: {
     id: string;
+    name: string;
     skillsOffered: string[];
     skillsWanted: string[];
   };
@@ -28,6 +29,16 @@ export default function RequestSwapDialog({ isOpen, onClose, targetUser, current
   const [skillWanted, setSkillWanted] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // Mock skills for current user
+  const mockCurrentUserSkills = [
+    "Web Development",
+    "React", 
+    "JavaScript",
+    "Node.js",
+    "Python",
+    "Data Analysis"
+  ];
 
   const handleSubmit = async () => {
     if (!skillOffered || !skillWanted || !message.trim()) {
@@ -40,48 +51,21 @@ export default function RequestSwapDialog({ isOpen, onClose, targetUser, current
     }
 
     setLoading(true);
-    try {
-      const response = await fetch('http://localhost:3001/api/swaps/request', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          fromUserId: currentUser.id,
-          toUserId: targetUser.id,
-          skillOffered,
-          skillWanted,
-          message: message.trim()
-        }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        toast({
-          title: "Success",
-          description: "Swap request sent successfully!",
-        });
-        onClose();
-        setSkillOffered("");
-        setSkillWanted("");
-        setMessage("");
-      } else {
-        toast({
-          title: "Error",
-          description: data.message || "Failed to send request",
-          variant: "destructive",
-        });
-      }
-    } catch (error) {
+    
+    // Simulate API call delay
+    setTimeout(() => {
       toast({
-        title: "Error",
-        description: "Network error. Please try again.",
-        variant: "destructive",
+        title: "Success! 🎉",
+        description: `Swap request sent to ${targetUser.name}! They will review your proposal.`,
       });
-    } finally {
+      
+      // Reset form
+      setSkillOffered("");
+      setSkillWanted("");
+      setMessage("");
       setLoading(false);
-    }
+      onClose();
+    }, 1500);
   };
 
   return (
@@ -102,7 +86,7 @@ export default function RequestSwapDialog({ isOpen, onClose, targetUser, current
                 <SelectValue placeholder="Select a skill you can teach" />
               </SelectTrigger>
               <SelectContent>
-                {currentUser.skillsOffered.map((skill) => (
+                {mockCurrentUserSkills.map((skill) => (
                   <SelectItem key={skill} value={skill}>
                     {skill}
                   </SelectItem>
